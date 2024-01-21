@@ -1,1 +1,201 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+// CSS RESET
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// ----END----
+
+
+:root{
+    --font-1:'Open Sans', sans-serif;
+    --font-2:'Lato', sans-serif;
+
+    --primary-color: #1463DD;
+    --primary-color-dark:#001372;
+    --primary-color-light:#ACCBFF;
+    
+    --secondary-color: #F67B59;
+    --secondary-color-dark: #5B0000;
+    --secondary-color-light: #FFA984;
+    
+    --disabled-color:#A1BDBB;
+    
+    --error-color: #AB3428;
+    --success-color: #66A182;
+    
+    --shade-color-1:#F3F3F3;
+    --shade-color-2: #BDBDBD;
+    --shade-color-3:#8A8A8A;
+    --shade-color-4: #686564;
+    --shade-color-5: #3C3937;
+    --shade-color-6:#14110F;
+    
+    --font-size-1: 81px;
+    --font-size-2:50px;
+    --font-size-3:40px;
+    --font-size-4:29px;
+    --font-size-5:20px;
+    --font-size-6:17px;
+    --font-size-7:14px;
+    --font-size-8:13px;
+    --font-size-9:12px;
+    --font-size-10:11px;
+    --font-size-11:9px;
+    
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    
+    --letter-spacing-1: -1.5px;
+    --letter-spacing-2: -0.5px;
+    --letter-spacing-3: 0px;
+    --letter-spacing-4: 0.1px;
+    --letter-spacing-5: 0.15px;
+    --letter-spacing-6: 0.25px;
+    --letter-spacing-7: 0.4px;
+    --letter-spacing-8: 0.5px;
+    --letter-spacing-9: 1.25px;
+    --letter-spacing-10: 1.5px;
+    
+    --size-1: 2px;
+    --size-2: 4px;
+    --size-3: 8px;
+    --size-4: 16px;
+    --size-5: 32px;
+    --size-6: 64px;
+}
+
+h1{
+    font-family: var(--font-1);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-light);
+    letter-spacing: var(--letter-spacing-1);
+}
+
+h2{
+    font-family: var(--font-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-light);
+    letter-spacing: var(--letter-spacing-3);
+}
+h3{
+    font-family: var(--font-1);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-3);
+}
+h4{
+    font-family: var(--font-1);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-6);
+}
+h5{
+    font-family: var(--font-1);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-3);
+}
+h6{
+    font-family: var(--font-1);
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-5);
+}
+p, p.body-1{
+    font-family: var(--font-2);
+    font-size: var(--font-size-7);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-8);
+}
+
+p.body-2{
+    font-family: var(--font-2);
+    font-size: var(--font-size-9);
+    font-weight: var(--font-weight-normal); 
+    letter-spacing: var(--letter-spacing-6);
+}
+
+p.subtitle-1{
+    font-family: var(--font-1);
+    font-size: var(--font-size-8);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-5);
+}
+
+p.subtitle-2{
+    font-family: var(--font-1);
+    font-size: var(--font-size-9);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-4);
+}
+
+
+button{
+    font-family: var(--font-2);
+    font-size: var(--font-size-9);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-9);
+    text-transform: uppercase;
+}
+
+span,span.caption{
+    font-family: var(--font-2);
+    font-size: var(--font-size-10);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-7);
+}
+
+span.overline{
+    font-family: var(--font-2);
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-10);
+    text-transform: uppercase;
+}
